@@ -2,6 +2,8 @@ import pyttsx3
 import speech_recognition as sr
 import datetime
 
+NAME = "Jarvis"
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices)
@@ -24,7 +26,7 @@ def wishMe():
     else:
         speak("Good Evening")
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")
+    speak("I am {} Sir. Please tell me how may I help you".format(NAME))
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -43,7 +45,7 @@ def takeCommand():
         print(e)
 
         print("Say that again please...")
-        return "None"
+        return None
 
 
 
