@@ -20,5 +20,3 @@ python ./jarvis.py # for windows
 python3 ./jarvis.py # for linux or mac
 ```
 
-# Reference -
-1. Code with Harry https://www.youtube.com/watch?v=Lp9Ftuq2sVI
